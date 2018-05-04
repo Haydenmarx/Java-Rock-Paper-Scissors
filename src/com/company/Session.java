@@ -27,22 +27,34 @@ public class Session {
     this.users.add(user);
   }
 
+  public int newPlayerId() {
+    return users.size();
+  }
+
   public void playMatch(CreateGame game, Player player1, String player1move, Player player2, String player2move) {
     System.out.printf("%s %s %s %s %s %s %s%s ", player1.getName(), "plays", player1move, "and", player2.getName(), "plays", player2move, ":");
-    if (game.playGame(player1move, player2move)) {
+    String result = game.playGame(player1move, player2move);
+    if (result.equals("tie")) {
+      System.out.println(player1.getName() + " and " + player2.getName() + " tie!");
+      postMatch(player1, player2, true);
+    } else if (result.equals("win")) {
       System.out.println(player1.getName() + " WINS!");
-      postMatch(player1, player2);
+      postMatch(player1, player2, false);
     } else {
       System.out.println(player2.getName() + " WINS!");
-      postMatch(player2, player1);
+      postMatch(player2, player1, false);
     }
   }
 
-  public void postMatch(Player winner, Player loser) {
+  public void postMatch(Player winner, Player loser, boolean tie) {
     Date now = new Date();
-//    System.out.println(winner.toString());
-    winner.updateGames(loser.getName(),true, now);
-    loser.updateGames(winner.getName(), false, now);
+    if (tie) {
+      winner.updateGames(loser.getName(),"tie", now);
+      loser.updateGames(winner.getName(), "tie", now);
+    } else {
+      winner.updateGames(loser.getName(),"win", now);
+      loser.updateGames(winner.getName(), "lose", now);
+    }
   }
 
   private Session() {

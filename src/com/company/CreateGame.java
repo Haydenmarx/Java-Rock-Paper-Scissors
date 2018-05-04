@@ -32,11 +32,14 @@ public class CreateGame {
     }
   }
 
-  public boolean playGame(String player1, String player2) {
+  public String playGame(String player1, String player2) {
+    if (player1.equals(player2)) {
+      return "tie";
+    }
     if (Game.size() == 5) {
-      return Game.get(player1)[0].equals(player2)  || Game.get(player1)[1].equals(player2);
+      return Game.get(player1)[0].equals(player2)  || Game.get(player1)[1].equals(player2) ? "win" : "lose";
     } else {
-      return Game.get(player1)[0].equals(player2);
+      return Game.get(player1)[0].equals(player2) ? "win" : "lose";
     }
   }
 
