@@ -75,7 +75,7 @@ public class CreateGame {
     returnString.append("--------------------------------\n");
     if (Game.size() == 5) {
       for (Object key : keys) {
-        returnString.append(String.format("%s %s %s %s %s%s\n", key, "beates", Game.get(key)[0], "and", Game.get(key)[1], "!"));
+        returnString.append(String.format("%s %s %s %s %s%s\n", key, "beats", Game.get(key)[0], "and", Game.get(key)[1], "!"));
       }
     } else {
       for (Object key : keys) {

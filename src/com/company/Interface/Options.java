@@ -124,7 +124,8 @@ public class Options implements Sections {
       List<String> gamelist = Arrays.asList(input.split("\\s*,\\s*"));
       ArrayList<String> newGame = new ArrayList<>();
       for (String choice : gamelist) {
-        newGame.add(choice);
+        String upperCase = choice.substring(0, 1).toUpperCase() + choice.substring(1);
+        newGame.add(upperCase);
       }
       System.out.println(newGame + " . " + newGame.size());
       if (newGame.size() != 3 && newGame.size() != 5) {
