@@ -11,6 +11,7 @@ import java.util.List;
 public class Options implements Sections {
   private static Options ourInstance = new Options();
   private Session gameSession = Session.getInstance();
+  private CreatePlayer viewedUser;
 
   public static Options getInstance() {
     return ourInstance;
@@ -18,6 +19,7 @@ public class Options implements Sections {
 
   private Options() {
   }
+
 
   public void display(String currentPage) {
     if (currentPage.equals("home")) {
@@ -35,7 +37,7 @@ public class Options implements Sections {
       System.out.println("------------");
       gameSession.getUsers();
       System.out.println();
-      System.out.println("Type return to exit to options menu.");
+      System.out.println("Type PLAYER NAME to see full games or RETURN to exit to options menu.");
     } else if (currentPage.equals("addgame")) {
       System.out.println("Enter your choices separated by commas:");
       System.out.println("Example 3: rock,paper,scissors");
@@ -46,8 +48,9 @@ public class Options implements Sections {
       gameSession.getGames();
       System.out.println();
       System.out.println("Type return to exit to options menu.");
-    } else if (currentPage.equals("success")) {
-      //
+    } else if (currentPage.equals("display")) {
+      gameSession.getUser(viewedUser.getName().toLowerCase()).displayGames();
+      System.out.println("Type PLAYER NAME to see full games or RETURN to exit to options menu.");
     } else if (currentPage.equals("error")) {
       System.out.println("There was an issue in adding your game.");
     } else {
@@ -142,9 +145,33 @@ public class Options implements Sections {
       result[1] = "home";
       return result;
     } else if (page.equals("viewplayers")) {
+      viewedUser = gameSession.getUser(input);
+      if (viewedUser != null) {
+        result[0] = "page";
+        result[1] = "display";
+        return result;
+      } else {
+        result[0] = "page";
+        result[1] = "viewplayers";
+        return result;
+      }
+    }
+
+    if (page.equals("display") && input.equals("return")) {
       result[0] = "page";
-      result[1] = "viewplayers";
+      result[1] = "home";
       return result;
+    } else if (page.equals("viewplayers")) {
+      viewedUser = gameSession.getUser(input);
+      if (viewedUser != null) {
+        result[0] = "page";
+        result[1] = "display";
+        return result;
+      } else {
+        result[0] = "page";
+        result[1] = "viewplayers";
+        return result;
+      }
     }
 
     if (page.equals("viewgames") && input.equals("return")) {
