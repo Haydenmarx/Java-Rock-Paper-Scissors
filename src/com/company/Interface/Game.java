@@ -123,13 +123,13 @@ public class Game implements Sections {
       }
     } else if (page.equals("confirm")) {
       if (input.equals("yes")) {
-        if (playerOne.equals("computer") && playerTwo.equals("computer")) {
+        if (playerOne.equals("Computer") && playerTwo.equals("Computer")) {
           playerOneMove = currentGame.playRandom();
           playerTwoMove = currentGame.playRandom();
           result[0] = "page";
           result[1] = "endgame";
           return result;
-        } else if (playerOne.equals("computer")) {
+        } else if (playerOne.equals("Computer")) {
           playerOneMove = currentGame.playRandom();
           result[0] = "page";
           result[1] = "player2select";
@@ -152,7 +152,7 @@ public class Game implements Sections {
     } else if (page.equals("player1select")) {
       String move =  input.substring(0, 1).toUpperCase() + input.substring(1);
       if (currentGame.checkMove(move)) {
-        if (playerTwo.equals("computer")) {
+        if (playerTwo.equals("Computer")) {
           playerOneMove = move;
           playerTwoMove = currentGame.playRandom();
           result[0] = "page";

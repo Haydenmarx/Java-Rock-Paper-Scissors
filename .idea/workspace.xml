@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c3e8512-4b97-4e1f-ad98-5ac510ad38fb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Generators/CreateGamesAndUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interface/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interface/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interface/Options.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interface/Sections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interface/Splash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Interface/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/CreateGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/UserInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CreateGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Generators/CreatePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/UserInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Generators/CreateGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Generators/CreateGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Interface/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Interface/Game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,8 +90,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-256">
-              <caret line="155" column="31" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="31" />
+            <state relative-caret-position="375">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +102,8 @@
       <file leaf-file-name="CreateGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Generators/CreateGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+            <state relative-caret-position="360">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#222#223#0" expanded="true" />
@@ -761,16 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Options.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="52" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -802,10 +776,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Options.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="52" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Generators/CreateGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        <state relative-caret-position="360">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#222#223#0" expanded="true" />
@@ -818,8 +802,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="155" column="31" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="31" />
+        <state relative-caret-position="375">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

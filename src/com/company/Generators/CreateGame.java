@@ -6,6 +6,7 @@ import java.util.Set;
 
 public class CreateGame {
   private HashMap<String, String[]> Game = new HashMap();
+  private String[] moves = {"", "", "", "", ""};
 
   public String getTitle() {
     return title;
@@ -19,6 +20,7 @@ public class CreateGame {
     if (size == 5) {
       for (int index = 0; index < size; index++) {
         String name = choices.get(index);
+        moves[index] = name;
         /* https://stackoverflow.com/questions/3904579/how-to-capitalize-the-first-letter-of-a-string-in-java/3904607 */
         title.append(name.substring(0, 1).toUpperCase());
         title.append(name.substring(1));
@@ -31,6 +33,7 @@ public class CreateGame {
     } else if (size == 3) {
       for (int index = 0; index < size; index++) {
         String name = choices.get(index);
+        moves[index] = name;
         title.append(name.substring(0, 1).toUpperCase());
         title.append(name.substring(1));
         title.append(" ");
@@ -44,6 +47,11 @@ public class CreateGame {
 
   public boolean checkMove(String move) {
     return Game.get(move) != null;
+  }
+
+  public String playRandom() {
+    int choice = (int) Math.floor(Math.random() * moves.length);
+    return moves[choice];
   }
 
   public String playGame(String player1, String player2) {
