@@ -12,8 +12,7 @@ public class Splash implements Sections {
 
   public void display(String currentPage) {
     if (currentPage.equals("home")) {
-      System.out.println("Splash page");
-      System.out.println("Continue | Help | Quit");
+      printLogo();
     } else {
       System.out.println("Help Page");
       System.out.println("Type Quit to quit at any time.");
@@ -21,6 +20,83 @@ public class Splash implements Sections {
       System.out.println("Help menus are context specific");
       System.out.println("Continue | Quit");
     }
+  }
+
+  private String[] rock = {
+   "     ***** ***                          *           ",
+   "  ******  * **                        **            ",
+   " **   *  *  **                        **            ",
+   "*    *  *   **                        **            ",
+   "    *  *    *      ****               **            ",
+   "   ** **   *      * ***  *    ****    **  ***       ",
+   "   ** **  *      *   ****    * ***  * ** * ***      ",
+   "   ** ****      **    **    *   ****  ***   *       ",
+   "   ** **  ***   **    **   **         **   *        ",
+   "   ** **    **  **    **   **         **  *         ",
+   "   *  **    **  **    **   **         ** **         ",
+   "      *     **  **    **   **         ******        ",
+   "  ****      ***  ******    ***     *  **  ***       ",
+   " *  ****    **    ****      *******   **   *** *    ",
+   "*    **     *                *****     **   ***     ",
+   "*                                                   ",
+   " **                                                 "
+  };
+  private String[] paper = {
+   "        ***** **                                                 ",
+   "     ******  ****                                                ",
+   "    **   *  *  ***                                               ",
+   "   *    *  *    ***                                              ",
+   "       *  *      **               ****              ***  ****    ",
+   "      ** **      **    ****      * ***  *    ***     **** **** * ",
+   "      ** **      **   * ***  *  *   ****    * ***     **   ****  ",
+   "    **** **      *   *   ****  **    **    *   ***    **         ",
+   "   * *** **     *   **    **   **    **   **    ***   **         ",
+   "      ** *******    **    **   **    **   ********    **         ",
+   "      ** ******     **    **   **    **   *******     **         ",
+   "      ** **         **    **   **    **   **          **         ",
+   "      ** **         **    **   *******    ****    *   ***        ",
+   "      ** **          ***** **  ******      *******     ***       ",
+   " **   ** **           ***   ** **           *****                ",
+   "***   *  *                     **                                ",
+   " ***    *                      **                                ",
+   "  ******                        **                               ",
+   "    ***                                                          "
+  };
+
+  private String[] scissors = {
+   "      *******                                                                                ",
+   "    *       ***               *                                                              ",
+   "   *         **              ***                                                             ",
+   "   **        *                *                                                              ",
+   "    ***                                ****       ****       ****    ***  ****       ****    ",
+   "   ** ***           ****    ***       * **** *   * **** *   * ***  *  **** **** *   * **** * ",
+   "    *** ***        * ***  *  ***     **  ****   **  ****   *   ****    **   ****   **  ****  ",
+   "      *** ***     *   ****    **    ****       ****       **    **     **         ****       ",
+   "        *** ***  **           **      ***        ***      **    **     **           ***      ",
+   "          ** *** **           **        ***        ***    **    **     **             ***    ",
+   "           ** ** **           **          ***        ***  **    **     **               ***  ",
+   "            * *  **           **     ****  **   ****  **  **    **     **          ****  **  ",
+   "  ***        *   ***     *    **    * **** *   * **** *    ******      ***        * **** *   ",
+   " *  *********     *******     *** *    ****       ****      ****        ***          ****    ",
+   "*     *****        *****       ***                                                           ",
+   "*                                                                                            ",
+   " **                                                                                          "
+  };
+
+
+  public void printLogo() {
+//      System.out.println();
+//      System.out.println();
+//      System.out.println();
+    for (int x= 0; x < rock.length; x++) {
+      System.out.println("|  " + rock[x] + paper[x] + "  |" );
+    }
+    for (int x= 0; x < rock.length; x++) {
+      System.out.println("|  " + "            " + scissors[x] + "            " + "  |" );
+    }
+    System.out.println("|                             Please set terminal size so the outline fits with no extra space                            |");
+    System.out.println("|                                                   Continue | Help | Quit                                                |");
+    System.out.println("<------------------------------------------------------------------------------------------------------------------------->");
   }
 
   public String[] handleInput(String page, String input) {
