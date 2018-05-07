@@ -19,7 +19,6 @@ public class Game implements Sections {
   private CreatePlayer playerTwo;
   private String playerTwoMove = "";
   private CreateGame currentGame;
-  private int counter = 1;
   private Session gameSession = Session.getInstance();
 
 
@@ -50,12 +49,6 @@ public class Game implements Sections {
       System.out.println("Chosen Game: " + currentGame.getTitle());
       System.out.println();
       System.out.println("Confirm: Yes or No");
-    } else if (currentPage.equals("rounds")) {
-
-      //Rounds or Best of
-    } else if (currentPage.equals("roundscount")) {
-
-      //Number of rounds/best of
     } else if (currentPage.equals("player1select")) {
       System.out.println("Player One Select:");
       System.out.println(currentGame);
@@ -72,9 +65,7 @@ public class Game implements Sections {
       System.out.println();
       System.out.println("Play Again?");
       System.out.println("PLAYER to change players. GAME to change game. AGAIN: same players same game. Or MAIN to return to the Main Menu");
-    } else if (currentPage.equals("again")) {
-      //play again
-    }  else if (currentPage.equals("error")) {
+    } else if (currentPage.equals("error")) {
       System.out.println("There was an issue in adding your game.");
     } else {
 
@@ -123,13 +114,13 @@ public class Game implements Sections {
       }
     } else if (page.equals("confirm")) {
       if (input.equals("yes")) {
-        if (playerOne.equals("Computer") && playerTwo.equals("Computer")) {
+        if (playerOne.getName().equals("Computer") && playerTwo.getName().equals("Computer")) {
           playerOneMove = currentGame.playRandom();
           playerTwoMove = currentGame.playRandom();
           result[0] = "page";
           result[1] = "endgame";
           return result;
-        } else if (playerOne.equals("Computer")) {
+        } else if (playerOne.getName().equals("Computer")) {
           playerOneMove = currentGame.playRandom();
           result[0] = "page";
           result[1] = "player2select";
@@ -144,16 +135,10 @@ public class Game implements Sections {
         result[1] = "home";
         return result;
       }
-    } else if (page.equals("rounds")) {
-      //Rounds or Best of
-    } else if (page.equals("roundscount")) {
-
-      //Number of rounds/best of
     } else if (page.equals("player1select")) {
       String move =  input.substring(0, 1).toUpperCase() + input.substring(1);
       if (currentGame.checkMove(move)) {
-        if (playerTwo.equals("Computer")) {
-          playerOneMove = move;
+        if (playerTwo.getName().equals("Computer")) {
           playerTwoMove = currentGame.playRandom();
           result[0] = "page";
           result[1] = "endgame";
@@ -192,7 +177,7 @@ public class Game implements Sections {
         return result;
       } if (input.equals("again")) {
         result[0] = "page";
-        result[1] = "player1select";
+        result[1] = "confirm";
         return result;
       } else {
         result[0] = "section";
@@ -200,20 +185,9 @@ public class Game implements Sections {
         return result;
       }
 
-    } else if (page.equals("again")) {
-      //play again
-    }
-
-
-
-
-    if (input.equals("help")) {
+    } else if (input.equals("help")) {
       result[0] = "page";
       result[1] = "help";
-      return result;
-    } else if (input.equals("continue")) {
-      result[0] = "section";
-      result[1] = "home";
       return result;
     } else {
       result[0] = "page";

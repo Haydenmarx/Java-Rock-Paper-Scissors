@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c3e8512-4b97-4e1f-ad98-5ac510ad38fb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Generators/CreateGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Generators/CreateGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Interface/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RockPaperScissors/com/company/Interface/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Generators/CreateGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Generators/CreateGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Interface/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Interface/Game.java" afterDir="false" />
     </list>
@@ -90,8 +93,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="125" selection-start-line="125" selection-end-line="125" />
+            <state relative-caret-position="270">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +105,8 @@
       <file leaf-file-name="CreateGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Generators/CreateGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="449">
+              <caret line="84" column="62" lean-forward="true" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#222#223#0" expanded="true" />
@@ -280,11 +283,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41625208" side_tool="true" visible="true" weight="0.26967472" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" x="327" y="288" width="960" height="648" id="Run" order="2" visible="true" weight="0.26967472" />
+      <window_info active="true" anchor="bottom" x="327" y="288" width="960" height="648" id="Run" order="2" sideWeight="0.5837479" visible="true" weight="0.26967472" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33053514" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997236" weight="0.33053514" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27086788" />
@@ -776,20 +779,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Options.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="52" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Generators/CreateGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="449">
+          <caret line="84" column="62" lean-forward="true" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#222#223#0" expanded="true" />
@@ -800,10 +793,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Options.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="52" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Interface/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="270">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

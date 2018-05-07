@@ -59,9 +59,9 @@ public class CreateGame {
       return "tie";
     }
     if (Game.size() == 5) {
-      return Game.get(player1)[0].equals(player2)  || Game.get(player1)[1].equals(player2) ? "lose" : "win";
+      return Game.get(player1)[0].equals(player2)  || Game.get(player1)[1].equals(player2) ? "win" : "lose";
     } else {
-      return Game.get(player1)[0].equals(player2) ? "lose" : "win";
+      return Game.get(player1)[0].equals(player2) ? "win" : "lose";
     }
   }
 
@@ -75,11 +75,11 @@ public class CreateGame {
     returnString.append("--------------------------------\n");
     if (Game.size() == 5) {
       for (Object key : keys) {
-        returnString.append(String.format("%s %s %s %s %s%s\n", key, "loses to", Game.get(key)[0], "and", Game.get(key)[1], "!"));
+        returnString.append(String.format("%s %s %s %s %s%s\n", key, "beates", Game.get(key)[0], "and", Game.get(key)[1], "!"));
       }
     } else {
       for (Object key : keys) {
-        returnString.append(String.format("%s %s %s%s\n",Game.get(key)[0], "beats", key, "!"));
+        returnString.append(String.format("%s %s %s%s\n", key, "beats", Game.get(key)[0], "!"));
       }
     }
     returnString.append("--------------------------------\n");
