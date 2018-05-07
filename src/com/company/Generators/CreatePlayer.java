@@ -1,9 +1,11 @@
-package com.company;
+package com.company.Generators;
+
+import com.company.Session;
 
 import java.util.Date;
 import java.util.ArrayList;
 
-public class Player {
+public class CreatePlayer {
   private int id;
   private String name;
   private int wins = 0;
@@ -11,7 +13,7 @@ public class Player {
   private int ties = 0;
   private ArrayList<String> games = new ArrayList();
 
-  public Player(String name) {
+  public CreatePlayer(String name) {
     id = Session.getInstance().newPlayerId();
     this.name = name;
   }
