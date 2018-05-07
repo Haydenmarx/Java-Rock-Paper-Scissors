@@ -139,6 +139,7 @@ public class Game implements Sections {
       String move =  input.substring(0, 1).toUpperCase() + input.substring(1);
       if (currentGame.checkMove(move)) {
         if (playerTwo.getName().equals("Computer")) {
+          playerOneMove = move;
           playerTwoMove = currentGame.playRandom();
           result[0] = "page";
           result[1] = "endgame";
